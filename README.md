@@ -1,6 +1,6 @@
 # OVERVIEW
 - This document about web design practice
-TIMELINE:
+# TIMELINE:
 1 week (30 OCT - 05 NOV)
 # TARGET:
 - Apply Sass to this practice, it makes the code shorter, editable by using variables, code reuse, mixin(function in SCSS)

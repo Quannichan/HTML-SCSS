@@ -17,9 +17,7 @@
 # SOURCE CODE
 Step1: Clone project : git clone git
 # HOW TO RUN
-
-Install the dependencies and devDependencies and start the server.
-
-cd clone-HTML_SCSS_REACTJS
-npm start
-Open on web: http://localhost:3000
+- Install the dependencies and devDependencies and start the server.
+- cd clone-HTML_SCSS_REACTJS
+- npm start
+- Open on web: http://localhost:3000

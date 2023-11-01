@@ -15,9 +15,8 @@ body{
     width: 100%;
     height: 768px;
     position: absolute;
-    background-image: url("../images/background_header.png");
+    background-image: $back_ground_header;
     filter: brightness(50%);
-    
 }
 .wrap_menu{
     z-index:1;

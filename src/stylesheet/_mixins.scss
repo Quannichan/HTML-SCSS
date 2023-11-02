@@ -1,1 +1,94 @@
+// font of trademark in responsive desktop screen
+@mixin Trademark_desktop{
+    color: #EBCB80;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.997px;
+}
 
+// font of middle list menu in responsive desktop screen
+@mixin ListMid_menu_desktop{
+    color: white;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+// font of header of header menu in responsive desktop screen
+@mixin header_header_desktop{
+    color: white;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: -1.6px;
+    width: 100vh;
+}
+// font of trademark in responsive tablet screen
+@mixin Trademark_Tab{
+    color: #EBCB80;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.331px;
+}
+
+// font of middle list menu in responsive tablet screen
+@mixin ListMid_menu_Tab{
+    color: white;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.998px;
+}
+
+// font of header of header menu in responsive tablet screen
+@mixin header_header_tab{
+    color: white;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -0.8px;
+}
+
+// font of trademark in responsive phone screen
+@mixin Trademark_phone{
+    color: #EBCB80;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.109px;
+}
+
+// font of middle list menu in responsive phone screen
+@mixin ListMid_menu_phone{
+    color: white;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+// font of header of header menu in responsive tablet screen
+@mixin header_header_phone{
+    color: white;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.8px;
+}

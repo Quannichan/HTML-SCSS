@@ -1,110 +1,270 @@
-@import "./backgrounds";
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+@import "./base/config";
+@import "./mixins";
+@import "./variables";
+
+@media (min-width: 769px) {
+    .wrap_header{
+        display: block;
+    }
+    .image_header{
+        z-index: -1;
+        width: 100%;
+        height: 120%;
+        object-fit: fill;
+        position: absolute;
+        background-position: center;
+        justify-content: center;
+        background-image: $back_ground_header;
+        filter: brightness(50%);
+    }
+    .wrap_menu{
+        z-index:1;
+        display: flex;
+        background-color: transparent;
+        padding: 3% 2% 0% 2%;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 3%;
+    }
+    .wrap_trademark{
+        display: flex;
+        justify-content: center;
+    }
+    .trademark{
+        @include Trademark_desktop;
+    }
+    .wrap_list1_menu_phone{
+        display: none;
+    }
+    .wrap_list1_menu{
+        display: block;
+    }
+    .list1_menu{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+        column-gap: 30px;
+    }
+    .list1{
+        @include ListMid_menu_desktop;
+    }
+    .wrap_list2_menu{
+        display: block;
+    }
+    .img_lits2{
+        width: 4vh;
+    }
+    .list2_menu{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        column-gap: 5vh;
+    }
+    .header_component{
+        display: flex;
+        justify-content: center;
+        padding: 2%;
+    }
+    .wrap_components{
+        display: block;
+        text-align: center;
+    }
+    .compo1{
+        margin-bottom: 7vh;
+    }
+    .head_header{
+        @include header_header_desktop;
+    }
+    .wrap_video_header{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 12vh;
+    }
+    .video_header{
+        border: transparent 0px solid;
+        width: 90vh;
+        height: 50vh;
+        box-shadow: 0px 0px 30px black;
+    }
 }
-body{
-    font-family: Roboto;
+
+// responsive screen in tablet
+@media (min-width: 669px) and (max-width: 769px){
+    .wrap_header{
+        display: block;
+    }
+    .image_header{
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        background-position:center;
+        position: absolute;
+        background-image: $back_ground_header;
+        filter: brightness(50%);
+    }
+    .wrap_menu{
+        z-index:1;
+        display: flex;
+        background-color: transparent;
+        padding: 5%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3%;
+    }
+    .wrap_trademark{
+        display: flex;
+        justify-content: center;
+    }
+    .trademark{
+        @include Trademark_Tab;
+    }
+    .wrap_list1_menu_phone{
+        display: none;
+    }
+    .wrap_list1_menu{
+        padding: 0% 5% 0% 5%;
+        display: block;
+    }
+    .list1_menu{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+        column-gap: 30px;
+    }
+    .list1{
+        @include ListMid_menu_Tab;
+    }
+    .wrap_list2_menu{
+        display: block;
+    }
+    .img_lits2{
+        width: 4vh;
+    }
+    .list2_menu{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        column-gap: 5vh;
+    }
+    .header_component{
+        display: flex;
+        justify-content: center;
+        padding: 5%;
+    }
+    .wrap_components{
+        display: block;
+        text-align: center;
+    }
+    .compo1{
+        margin-bottom: 7vh;
+    }
+    .head_header{
+        @include header_header_tab;
+    }
+    .wrap_video_header{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 12vh;
+    }
+    .video_header{
+        border: transparent 0px solid;
+        width: 70vh;
+        height: 40vh;
+        box-shadow: 0px 0px 30px black;
+    }
 }
-.wrap_header{
-    display: block;
-}
-.image_header{
-    z-index: -1;
-    width: 100%;
-    height: 768px;
-    position: absolute;
-    background-image: url("../images/background_header.png");
-    filter: brightness(50%);
-    
-}
-.wrap_menu{
-    z-index:1;
-    display: flex;
-    background-color: transparent;
-    padding: 3%;
-    justify-content: space-between;
-    align-items: center;
-}
-.wrap_trademark{
-    display: flex;
-    justify-content: center;
-}
-.trademark{
-    color: #EBCB80;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 1.997px;
-}
-.wrap_list1_menu{
-    display: block;
-}
-.list1_menu{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style: none;
-    column-gap: 30px;
-}
-.list1{
-    color: #FFF;
-    font-family: Roboto;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 1px;
-}
-.wrap_list2_menu{
-    display: block;
-}
-.list2_menu{
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly;
-    align-items: center;
-    column-gap: 30px;
-}
-.img_lits2{
-    width: 25px;
-    height: 25px;
-}
-.header_component{
-    display: flex;
-    justify-content: center;
-    margin: 3%;
-}
-.wrap_components{
-    display: block;
-    text-align: center;
-}
-.compo1{
-    margin-bottom: 30px;
-}
-.head_header{
-    color: #FFF;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 48px; /* 109.091% */
-    letter-spacing: -1.6px;
-    width: 550px;
-}
-.wrap_video_header{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 100px;
-}
-.video_header{
-    border: transparent 0px solid;
-    width: 555px;
-    height: 324px;
-    box-shadow: 0px 0px 30px black;
+
+// Responsive of Phone screen
+@media screen and (max-width: 669px) {
+    .wrap_header{
+        display: block;
+    }
+    .image_header{
+        z-index: -1;
+        width: 100%;
+        height: 110%;
+        object-fit: fill;
+        position: absolute;
+        background-image: $back_ground_header;
+        filter: brightness(50%);
+    }
+    .wrap_menu{
+        z-index:1;
+        display: flex;
+        background-color: transparent;
+        padding: 6%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15%;
+    }
+    .wrap_trademark{
+        display: flex;
+        justify-content: center;
+    }
+    .trademark{
+        @include Trademark_phone;
+    }
+    .wrap_list1_menu{
+        display: none;
+    }
+    .wrap_list1_menu_phone{
+        display: block;
+    }
+    .nav_down{
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        backdrop-filter: brightness(20%);
+        padding-top: 10%;
+        width: 50%;
+        height: 100%;
+    }
+    .hamburger:hover~.nav_down{
+        display: block;
+    }
+    .list1{
+        @include ListMid_menu_phone;
+    }
+    .wrap_list2_menu{
+        display: block;
+    }
+    .img_lits2{
+        width: 4vh;
+    }
+    .list2_menu{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        column-gap: 5vh;
+    }
+    .header_component{
+        display: flex;
+        justify-content: center;
+        padding: 7%;
+    }
+    .wrap_components{
+        display: block;
+        text-align: center;
+    }
+    .compo1{
+        margin-bottom: 7vh;
+    }
+    .head_header{
+        @include header_header_phone;
+    }
+    .wrap_video_header{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 12vh;
+    }
+    .video_header{
+        border: transparent 0px solid;
+        width: 55vh;
+        height: 30vh;
+        box-shadow: 0px 0px 30px black;
+    }
 }

@@ -2,14 +2,27 @@
 @import "./mixins";
 @import "./variables";
 
-@media (min-width: 769px) {
+@media (min-width: $break_tab) {
     .wrap_header{
         display: block;
     }
+    .wrap_nav{
+        display: flex;
+        align-items: center;
+    }
+    .hamburger{
+        display: none;
+    }
+    .nav_down{
+        display: flex;
+        justify-content: space-evenly;
+        column-gap: 30px;
+        margin-right: 50px;
+    }
     .image_header{
         z-index: -1;
-        width: 100%;
-        height: 120%;
+        width: 100vw;
+        height: 120vh;
         object-fit: fill;
         position: absolute;
         background-position: center;
@@ -24,7 +37,7 @@
         padding: 3% 2% 0% 2%;
         justify-content: space-evenly;
         align-items: center;
-        margin-bottom: 3%;
+        margin-bottom: 2%;
     }
     .wrap_trademark{
         display: flex;
@@ -32,9 +45,6 @@
     }
     .trademark{
         @include Trademark_desktop;
-    }
-    .wrap_list1_menu_phone{
-        display: none;
     }
     .wrap_list1_menu{
         display: block;
@@ -52,14 +62,11 @@
     .wrap_list2_menu{
         display: block;
     }
-    .img_lits2{
-        width: 4vh;
-    }
     .list2_menu{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        column-gap: 5vh;
+        column-gap: 30px;
     }
     .header_component{
         display: flex;
@@ -71,7 +78,7 @@
         text-align: center;
     }
     .compo1{
-        margin-bottom: 7vh;
+        margin-bottom: 7%;
     }
     .head_header{
         @include header_header_desktop;
@@ -79,25 +86,38 @@
     .wrap_video_header{
         display: flex;
         justify-content: center;
-        margin-bottom: 12vh;
+        margin-bottom: 10%;
     }
     .video_header{
         border: transparent 0px solid;
-        width: 90vh;
-        height: 50vh;
+        width: 30em;
+        height: 17em;
         box-shadow: 0px 0px 30px black;
     }
 }
 
 // responsive screen in tablet
-@media (min-width: 669px) and (max-width: 769px){
+@media (min-width: $break_phone) and (max-width: $break_tab){
     .wrap_header{
         display: block;
     }
+    .wrap_nav{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .hamburger{
+        display: none;
+    }
+    .nav_down{
+        display: flex;
+        column-gap: 30px;
+    }
     .image_header{
         z-index: -1;
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         object-fit: fill;
         background-position:center;
         position: absolute;
@@ -108,10 +128,10 @@
         z-index:1;
         display: flex;
         background-color: transparent;
-        padding: 5%;
+        padding: 5% 3% 0% 3% ;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 3%;
+        margin-bottom: 2%;
     }
     .wrap_trademark{
         display: flex;
@@ -132,7 +152,7 @@
         justify-content: space-evenly;
         align-items: center;
         list-style: none;
-        column-gap: 30px;
+        column-gap: 20px;
     }
     .list1{
         @include ListMid_menu_Tab;
@@ -140,14 +160,12 @@
     .wrap_list2_menu{
         display: block;
     }
-    .img_lits2{
-        width: 4vh;
-    }
+
     .list2_menu{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        column-gap: 5vh;
+        column-gap: 20px;
     }
     .header_component{
         display: flex;
@@ -159,7 +177,7 @@
         text-align: center;
     }
     .compo1{
-        margin-bottom: 7vh;
+        margin-bottom: 7%;
     }
     .head_header{
         @include header_header_tab;
@@ -167,25 +185,35 @@
     .wrap_video_header{
         display: flex;
         justify-content: center;
-        margin-bottom: 12vh;
+        margin-bottom: 10%;
     }
     .video_header{
         border: transparent 0px solid;
-        width: 70vh;
-        height: 40vh;
+        width: 22em;
+        height: 13em;
         box-shadow: 0px 0px 30px black;
     }
 }
 
 // Responsive of Phone screen
-@media screen and (max-width: 669px) {
+@media screen and (max-width: $break_phone) {
     .wrap_header{
+        display: block;
+    }
+    .wrap_nav{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 67%;
+        justify-content: space-between;
+    }
+    .hamburger{
         display: block;
     }
     .image_header{
         z-index: -1;
-        width: 100%;
-        height: 110%;
+        width: 100vw;
+        height: 110vh;
         object-fit: fill;
         position: absolute;
         background-image: $back_ground_header;
@@ -195,7 +223,7 @@
         z-index:1;
         display: flex;
         background-color: transparent;
-        padding: 6%;
+        padding: 6% 6% 0% 6%;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 15%;
@@ -208,7 +236,7 @@
         @include Trademark_phone;
     }
     .wrap_list1_menu{
-        display: none;
+        display: block;
     }
     .wrap_list1_menu_phone{
         display: block;
@@ -232,14 +260,11 @@
     .wrap_list2_menu{
         display: block;
     }
-    .img_lits2{
-        width: 4vh;
-    }
     .list2_menu{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        column-gap: 5vh;
+        column-gap: 20px;
     }
     .header_component{
         display: flex;
@@ -251,7 +276,7 @@
         text-align: center;
     }
     .compo1{
-        margin-bottom: 7vh;
+        margin-bottom: 7%;
     }
     .head_header{
         @include header_header_phone;
@@ -259,12 +284,12 @@
     .wrap_video_header{
         display: flex;
         justify-content: center;
-        margin-bottom: 12vh;
+        margin-bottom: 40%;
     }
     .video_header{
         border: transparent 0px solid;
-        width: 55vh;
-        height: 30vh;
+        width: 16em;
+        height: 10em;
         box-shadow: 0px 0px 30px black;
     }
 }

@@ -1,1 +1,296 @@
+// font of trademark in responsive desktop screen
+@mixin Trademark_desktop{
+    color: #EBCB80;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.997px;
+}
 
+// font of middle list menu in responsive desktop screen
+@mixin ListMid_menu_desktop{
+    color: white;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+// font of header of header menu in responsive desktop screen
+@mixin header_header_desktop{
+    color: white;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: -1.6px;
+    width: 100vh;
+}
+// font of trademark in responsive tablet screen
+@mixin Trademark_Tab{
+    color: #EBCB80;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.331px;
+}
+
+// font of middle list menu in responsive tablet screen
+@mixin ListMid_menu_Tab{
+    color: white;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.998px;
+}
+
+// font of header of header menu in responsive tablet screen
+@mixin header_header_tab{
+    color: white;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -0.8px;
+}
+
+// font of trademark in responsive phone screen
+@mixin Trademark_phone{
+    color: #EBCB80;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.109px;
+}
+
+// font of middle list menu in responsive phone screen
+@mixin ListMid_menu_phone{
+    color: white;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+// font of header of header menu in responsive tablet screen
+@mixin header_header_phone{
+    color: white;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.8px;
+}
+// header main component 1 desktop
+@mixin header_maincpo1_desk{
+        font-size: 44px;
+        font-weight: 400;
+        line-height: 48px; 
+        letter-spacing: -1.6px;
+}
+// header main component 1 tablet
+@mixin header_maincpo1_tab{
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: -0.8px;
+}
+// header main component 1 phone
+@mixin header_maincpo1_phone{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+}
+// text 1 main component 1 desktop
+@mixin ct1_maincpo1_desk{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+// text 1 main component 1 tab
+@mixin ct1_maincpo1_tab{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+}
+// text 1 main component 1 phone
+@mixin ct1_maincpo1_phone{
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+}
+// cap 1 main component 1 desktop
+@mixin cap1_maincpo1_desk{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.889px;
+}
+// text 1 main component 1 tab
+@mixin cap1_maincpo1_tab{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.8px;
+}
+// text 1 main component 1 phone
+@mixin cap1_maincpo1_phone{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.889px;
+}
+// text 2 main component 1 desk
+@mixin cap2_maincpo1_desk{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+// text 2 main component 1 tab
+@mixin cap2_maincpo1_tab{
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+}
+// text 2 main component 1 phone
+@mixin cap2_maincpo1_phone{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+//  header main component 2 desk
+@mixin header_maincpo2_desk{
+    color: white;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: -1.6px;
+}
+//  header main component 2 tab
+@mixin header_maincpo2_tab{
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: -0.8px;
+}
+//  header main component 2 phone
+@mixin header_maincpo2_phone{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+}
+// content main component 2 desk
+@mixin ct_maincpo2_desk{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+// content main component 2 tab
+@mixin ct_maincpo2_tab{
+    color:white;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+}
+// content main component 2 phone
+@mixin ct_maincpo2_phone{
+    color: white;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+}
+// header main component 3 desk
+@mixin header_maincpo3_desk{
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: -1.6px;
+}
+// header main component 3 tab
+@mixin header_maincpo3_tab{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: -0.8px;
+}
+// header main component 3 phone
+@mixin header_maincpo3_phone{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+}
+//  name person main component 3 desktop
+@mixin name_per_desk{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 1px;
+}
+//  name person main component 3 tab
+@mixin name_per_tab{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.8px;
+}
+//  name person main component 3 phone
+@mixin name_per_phone{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.8px;
+}
+// person job component 3 desk
+@mixin job_per_desk{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+}
+// person job component 3 tab
+@mixin job_per_tab{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 32px;
+}
+// person job component 3 phone
+@mixin job_per_phone{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 32px;
+}
+// person script component 3 desk
+@mixin scr_per_desk{
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+}
+// person script component 3 tab
+@mixin scr_per_tab{
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+}
+// person script component 3 phone
+@mixin scr_per_phone{
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+}

@@ -1,1 +1,96 @@
-
+<div class="wrap_maincpo4">
+    <div class="maincpo4">
+        <div class="ct_maincpo4">
+            <div class="wr_ct1_maincpo4">
+                <p class="ct1_maincpo4">Choose Your Plan</p>
+            </div>
+            <div  class="wr_ct2_maincpo4">
+                <div id="plan1" class="wr_plan1_maincpo4">
+                    <p class="plan1_name">SILVER</p>
+                    <p class="price_pl1"><span class="dolar_pl1">$</span>49</p>
+                    <p class="year_pl1">YEAR</p>
+                    <p class="scr_pl1">Personal Account<br>25 GB Discspace<br>50 Uploads per day</p>
+                    <div class="wrap_btn_pl1">
+                        <button class="btn_pl1">PURCHASE</button>
+                    </div>
+                </div>
+                <div id="plan2" class="wr_plan2_maincpo4">
+                    <p class="plan2_name">GOLD</p>
+                    <p class="price_pl2"><span class="dolar_pl2">$</span>99</p>
+                    <p class="year_pl2">YEAR</p>
+                    <p class="scr_pl2">Personal Account<br>50 GB Discspace<br>500 Uploads per day</p>
+                    <div class="wrap_btn_pl2">
+                        <button class="btn_pl2">PURCHASE</button>
+                    </div>
+                </div>
+                <div id="plan3" class="wr_plan3_maincpo4">
+                    <p class="plan3_name">PLATINUM</p>
+                    <p class="price_pl3"><span class="dolar_pl3">$</span>299</p>
+                    <p class="year_pl3">YEAR</p>
+                    <p class="scr_pl3">Team Account<br>500 GB Discspace<br>Unlimited Uploads per day</p>
+                    <div class="wrap_btn_pl3">
+                        <button class="btn_pl3">PURCHASE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap_btn_allplan">
+                <button id="btn_pl1" onclick="silver(this.id)" class="btn_choose_pl">SILVER</button>
+                <button id="btn_pl2" onclick="gold(this.id)"  class="btn_choose_pl">GOLD</button>
+                <button id="btn_pl3" onclick="plantinum(this.id)"  class="btn_choose_pl">PLATINUM</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function silver(ID_BTN){
+            document.getElementById("plan2").style.zIndex =0;
+            document.getElementById("plan2").style.transform= "translateY(-1px)";
+            document.getElementById("plan3").style.zIndex =1;
+            document.getElementById("plan3").style.transform= "translateY(15px)";
+            document.getElementById("plan1").style.zIndex =2;
+            document.getElementById("plan1").style.transform= "translateY(30px)";
+            document.getElementById(ID_BTN).style.backgroundColor="#EBCB80";
+            document.getElementById(ID_BTN).style.color="#4B4B4B";
+            document.getElementById("btn_pl2").style.backgroundColor ="transparent";
+            document.getElementById("btn_pl2").style.color ="black";
+            document.getElementById("btn_pl3").style.backgroundColor ="transparent";
+            document.getElementById("btn_pl3").style.color ="black";
+            document.getElementById("plan1").style.padding = "10% 22%"
+            document.getElementById("plan3").style.padding = "5% 2% "
+            document.getElementById("plan2").style.padding = "5% 2% "
+        }
+        function gold(ID_BTN){
+            document.getElementById("plan3").style.zIndex =0;
+            document.getElementById("plan3").style.transform= "translateY(-10px)";
+            document.getElementById("plan1").style.zIndex =1;
+            document.getElementById("plan1").style.transform= "translateY(5px)";
+            document.getElementById("plan2").style.zIndex =2;
+            document.getElementById("plan2").style.transform= "translateY(27px)";
+            document.getElementById(ID_BTN).style.backgroundColor="#EBCB80";
+            document.getElementById(ID_BTN).style.color="#4B4B4B";
+            document.getElementById("btn_pl1").style.backgroundColor ="transparent";
+            document.getElementById("btn_pl1").style.color ="black";
+            document.getElementById("plan1").style.padding = "10% 17%"
+            document.getElementById("plan3").style.padding = "3% 1% "
+            document.getElementById("plan2").style.padding = "5% 8% "
+            document.getElementById("btn_pl3").style.backgroundColor ="transparent";
+            document.getElementById("btn_pl3").style.color ="black";
+        }
+        function plantinum(ID_BTN){
+            document.getElementById("plan1").style.zIndex =0;
+            document.getElementById("plan1").style.transform= "translateY(-10px)";
+            document.getElementById("plan2").style.zIndex =1;
+            document.getElementById("plan2").style.transform= "translateY(15px)";
+            document.getElementById("plan3").style.zIndex =2;
+            document.getElementById("plan3").style.transform= "translateY(30px)";
+            document.getElementById(ID_BTN).style.backgroundColor="#EBCB80";
+            document.getElementById(ID_BTN).style.color="#4B4B4B";
+            document.getElementById("btn_pl1").style.backgroundColor ="transparent";
+            document.getElementById("btn_pl1").style.color ="black";
+            document.getElementById("plan1").style.padding = "5% 8%"
+            document.getElementById("plan3").style.padding = "5% 5% "
+            document.getElementById("plan2").style.padding = "5% 6% "
+            document.getElementById("btn_pl2").style.backgroundColor ="transparent";
+            document.getElementById("btn_pl2").style.color ="black";
+        }
+    </script>
+</div>

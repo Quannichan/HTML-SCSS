@@ -1,5 +1,3 @@
-# @EOL: CRLF
-# This .gitignore file uses CRLF line endings.
 # dependencies
 /node_modules
 /.parcel-cache

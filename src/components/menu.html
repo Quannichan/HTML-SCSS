@@ -6,18 +6,23 @@
         <ul class="wrap_list_option">
             <li class="list_ham">
                 <img class="hamburger_response" src="../images/Hamburger.png" alt="">
-                <ul class="wrap_list_response">
-                    <li class="list_menu">HOTELS</li>
-                    <li class="list_menu">AIRLINES</li>
-                    <li class="list_menu">VACATIONS</li>
-                    <li class="list_menu">FIND MORE</li>
-                </ul>
+                <include src="./components/list.html" 
+                locals='{
+                    "choose":"list_noimg",
+                    "ul_classname":"wrap_list_response",
+                    "li_classname":"list_menu",
+                    "list" : "[`HOTELS`, `AIRLINES`, `VACATIONS`, `FIND MORE`]"
+                }'>
+                </include>
             </li>
         </ul>
-        <ul class="wrap_list_contact">
-            <li class="list_menu"><img src="../images/twitter_white.png" alt=""></li>
-            <li class="list_menu"><img src="../images/facebook_white.png" alt=""></li>
-            <li class="list_menu"><img src="../images/instagram_white.png" alt=""></li>
-        </ul>
+        <include src="./components/list.html" 
+                locals='{
+                    "choose":"list_img",
+                    "ul_classname":"wrap_list_contact",
+                    "li_classname":"list_menu",
+                    "list" : "[`../images/twitter_white.png`, `../images/facebook_white.png`, `../images/instagram_white.png`]"
+                }'>
+        </include>
     </nav>
 </menu>

@@ -1,20 +1,18 @@
 {
-  "name": "html-css-training",
+  "name": "html-scss",
   "version": "1.0.0",
-  "description": "",
+  "description": "- A project about design practice.\r # Timeline:\r - From 30/10/2023(Mon) To 06/11/2023(Sun).\r # TECHNICAL USED:\r - HTML5/CSS3.\r - POSTHTML-INCLUDE.\r - SCSS.\r - SCSS Complier (Complie to CSS).\r - Parcel.\r # WEB DESIGN:\r - Link.\r # SOURCE CODE:\r - git clone https://github.com/Quannichan/HTML-SCSS.git .\r # HOW TO RUN:\r - Step 1: npm install parcel\r - Step 2: npx parcel src/index.html\r - Step 3: Open browser (Chrome, firefox, CocCoc, Brave,.....) and type an adress that appear on console: 'Server running at http://localhost:1234'\r * EXAMPLE:\r   + npm install parcel\r   + npm WARN deprecated stable@0.1.8: Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility          table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility",
+  "main": "index.js",
   "scripts": {
-    "dev": "parcel ./src/pages/index.html"
+    "dev": "parcel src/pages/index.html"
   },
-  "keywords": [],
   "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "parcel-bundler": "^1.12.5",
+    "@parcel/transformer-sass": "^2.10.1",
+    "parcel": "^2.10.1",
     "posthtml-doctype": "^1.1.1",
     "posthtml-include": "^1.7.4",
-    "sass": "^1.49.9"
-  },
-  "dependencies": {
-    "@parcel/transformer-sass": "^2.10.1",
-    "posthtml": "^0.16.6"
+    "sass": "^1.69.5"
   }
 }

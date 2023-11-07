@@ -1,0 +1,63 @@
+@mixin trademark_large(){
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 1.997px;
+}
+@mixin trademark_medium(){
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1.331px;
+}
+@mixin trademark_small(){
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1.109px;
+}
+
+@mixin header_font_large(){
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: -1.6px;
+}
+@mixin header_font_medium(){
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -0.8px;
+}
+@mixin header_font_small(){
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.8px;
+}
+@mixin font_large(){
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+@mixin font_medium(){
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.998px;
+}
+@mixin font_small(){
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px; 
+}
+@mixin normal_font_large(){
+    font-size: 16px;
+    font-weight: 400;
+}
+@mixin normal_font_medium(){
+    font-size: 11px;
+    font-weight: 400;
+}
+@mixin normal_font_small(){
+    font-size: 11px;
+    font-weight: 400;
+}

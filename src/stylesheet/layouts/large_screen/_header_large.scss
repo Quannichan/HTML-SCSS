@@ -1,0 +1,53 @@
+@import "../../abstracts/variables";
+@import "../../abstracts/backgrounds";
+@import "../../abstracts/mixins";
+@media (min-width: $break_tab) {
+    header{
+        background-color: rgb(182, 179, 179);
+        background-image: $background_header;
+        background-size: cover;
+        display: block;
+        padding-top: 2%;
+        padding-bottom: 5%;
+        isolation: isolate;
+        background-blend-mode: multiply;
+    }
+    .header_component{
+        display: flex;
+        justify-content: center;
+        padding-top: 5%;
+        text-align: center;
+    }
+    .head_content{
+        display: block;
+    }
+    .wrap_title{
+        display: flex;
+        justify-content: center;
+        text-wrap:balance;
+        margin-bottom: 1%;
+    }
+    .title{
+        color: $color_white;
+        @include header_font_large;
+    }
+    .wrap_video{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 7%;
+        padding: 10% 10% 0% 10%;
+        align-items: center;
+    }
+    .video{
+        width: 100%;     
+        box-shadow: 0px 0px 20px black;
+    }
+    .play_btn{
+        position: absolute;
+    }
+    .wrap_arrow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

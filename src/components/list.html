@@ -1,0 +1,14 @@
+<ul class="{{ul_classname}}"> 
+    <if condition="choose === 'list_noimg'">
+        <each loop="item in {{ list }}">
+            <li class="{{li_classname}}">{{ item }}</li>
+        </each>
+    </if>
+    <elseif condition="choose === 'list_img'">
+        <each loop="src_img in {{ list }}">
+            <li class="{{li_classname}}"><img src="{{src_img}}" alt="image list"></li>
+        </each>
+    </elseif>
+    <else>
+    </else>
+</ul>

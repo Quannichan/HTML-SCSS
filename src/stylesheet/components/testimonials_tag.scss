@@ -1,0 +1,194 @@
+@import "../abstracts/variables";
+@import "../abstracts/backgrounds";
+@import "../abstracts/mixins";
+@media (min-width:$break_tab){
+    .wrap_testi{
+        display: block;
+        margin-top: 2%;
+        padding: 5%;
+    }
+    .wrap_testi_header{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 5%
+    }
+    .testi_header{
+        @include header_font_large();
+        color: $color_black;
+    }
+    .wrap_testi_tag{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+    }
+    .testimo_tag{
+        display: flex;
+        text-wrap: balance;
+        justify-content: space-evenly;
+        column-gap: 20px;
+        align-items: flex-start;
+        padding: 2%;
+        border-radius: 10px;
+        transition: 0.25s;
+    }
+    .testimo_tag:hover{
+        box-shadow: 0px 0px 10px black;
+    }
+    .testi_img{
+        border-radius: 50%;
+    }
+    .wrap_testi_info{
+        display: block;
+    }
+    .testi_name{
+        @include font_large();
+        color: $color_black;
+        margin-bottom: 1%;
+    }
+    .testi_pos{
+        @include normal_font_large();
+        color: $color_black;
+        margin-bottom: 7%;
+    }
+    .testi_script{
+        @include normal_font_large();
+        color: $color_black;
+        margin-bottom: 5%;
+    }
+    .wrap_testi_contact{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        column-gap: 20px;
+    }
+}
+@media (min-width:$break_phone) and (max-width:$break_tab){
+    .wrap_testi{
+        display: block;
+        margin-top: 2%;
+        padding: 5%;
+    }
+    .wrap_testi_header{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 5%
+    }
+    .testi_header{
+        @include header_font_medium();
+        color: $color_black;
+    }
+    .wrap_testi_tag{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+    }
+    .testimo_tag{
+        display: flex;
+        text-wrap: balance;
+        justify-content: space-evenly;
+        column-gap: 20px;
+        align-items: flex-start;
+        padding: 2%;
+        border-radius: 10px;
+        transition: 0.25s;
+    }
+    .testimo_tag:hover{
+        box-shadow: 0px 0px 10px black;
+    }
+    .testi_img{
+        border-radius: 50%;
+    }
+    .wrap_testi_info{
+        display: block;
+    }
+    .testi_name{
+        @include font_medium();
+        color: $color_black;
+        margin-bottom: 1%;
+    }
+    .testi_pos{
+        @include normal_font_medium();
+        color: $color_black;
+        margin-bottom: 7%;
+    }
+    .testi_script{
+        @include normal_font_medium();
+        color: $color_black;
+        margin-bottom: 5%;
+    }
+    .wrap_testi_contact{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        column-gap: 20px;
+    }
+}
+@media (max-width:$break_phone){
+    .wrap_testi{
+        display: block;
+        margin-top: 2%;
+        padding: 5%;
+    }
+    .wrap_testi_header{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 10%
+    }
+    .testi_header{
+        @include header_font_small();
+        color: $color_black;
+    }
+    .wrap_testi_tag{
+        display: grid;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+    }
+    .testimo_tag{
+        display: flex;
+        text-wrap: balance;
+        justify-content: space-evenly;
+        column-gap: 20px;
+        align-items: flex-start;
+        padding: 2%;
+        border-radius: 10px;
+        transition: 0.25s;
+    }
+    .testimo_tag:hover{
+        box-shadow: 0px 0px 10px black;
+    }
+    .testi_img{
+        border-radius: 50%;
+    }
+    .wrap_testi_info{
+        display: block;
+    }
+    .testi_name{
+        @include font_small();
+        color: $color_black;
+        margin-bottom: 1%;
+    }
+    .testi_pos{
+        @include normal_font_small();
+        color: $color_black;
+        margin-bottom: 7%;
+    }
+    .testi_script{
+        @include normal_font_small();
+        color: $color_black;
+        margin-bottom: 5%;
+    }
+    .wrap_testi_contact{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        column-gap: 20px;
+    }
+}

@@ -1,0 +1,262 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+@media (min-width:$break_tab){
+    .plan{
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items:flex-start;
+        text-align: center;
+        text-wrap: nowrap;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        width: 200px;
+        border-radius: 10px;
+    }
+    #silver{
+        background-color: $silver_col;
+    }
+    #gold{
+        background-color: $color_yellow;
+    }
+    #platinum{
+        background-color: $plat_col;
+    }
+    .white_name{
+        @include font_large();
+        color: $color_yellow;
+        font-family: Lucida Grande;
+        margin-bottom: 7%
+    }
+    .black_name{
+        @include font_large();
+        color: $color_black;
+        margin-bottom: 7%
+    }
+    .wrap_price{
+        display: flex;
+        justify-content: center;
+        align-items:flex-start;
+        column-gap: 10px;
+        margin-left: -25px;
+    }
+    .dollar{
+        margin-top: 12px;
+        @include dollar_large();
+    }
+    #dollar_white{
+        color: $color_white;
+    }
+    #dollar_black{
+        color: $color_black;
+    }
+    .price{
+        @include plan_price_large();
+    }
+    #price_wh{
+        color: $color_white;
+    }
+    #price_bl{
+        color: $color_black;
+    }
+    .year{
+        @include font_large();
+        margin-bottom: 10%;
+    }
+    #year_wh{
+        color: $color_white;
+    }
+    #year_bl{
+        color: $color_black;
+    }
+    .wrap_tag_script{
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.25px;
+        margin-bottom: 20px;
+    }
+    .tag_script{
+        @include normal_font_large();
+    }
+    #wh_scr{
+        color: $color_white;
+    }
+}
+@media (max-width:$break_tab) and (min-width:$break_phone){
+    .plan{
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: center;
+        text-wrap: nowrap;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        width: 170px;
+        border-radius: 10px;
+    }
+    #silver{
+        background-color: $silver_col;
+    }
+    #gold{
+        background-color: $color_yellow;
+    }
+    #platinum{
+        background-color: $plat_col;
+    }
+    .white_name{
+        @include font_medium();
+        color: $color_yellow;
+        font-family: Lucida Grande;
+        margin-bottom: 7%
+    }
+    .black_name{
+        @include font_medium();
+        color: $color_black;
+        margin-bottom: 7%
+    }
+    .wrap_price{
+        display: flex;
+        justify-content: center;
+        align-items:flex-start;
+        column-gap: 5px;
+        margin-left: -12px;
+    }
+    .dollar{
+        margin-top: 6px;
+        @include dollar_medium();
+    }
+    #dollar_white{
+        color: $color_white;
+    }
+    #dollar_black{
+        color: $color_black;
+    }
+    .price{
+        @include plan_price_medium();
+    }
+    #price_wh{
+        color: $color_white;
+    }
+    #price_bl{
+        color: $color_black;
+    }
+    .year{
+        @include font_medium();
+        margin-bottom: 10%;
+    }
+    #year_wh{
+        color: $color_white;
+    }
+    #year_bl{
+        color: $color_black;
+    }
+    .wrap_tag_script{
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.25px;
+        margin-bottom: 20px;
+    }
+    .tag_script{
+        @include normal_font_medium();
+    }
+    #wh_scr{
+        color: $color_white;
+    }
+}
+@media (max-width:$break_phone){
+    .plan{
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: center;
+        text-wrap: nowrap;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        border-radius: 10px;
+        transition: 0.25s ease-out;
+    }
+    #silver{
+        background-color: $silver_col;
+        transition: 0.25s ease-out;
+        width: 180px;
+        z-index: 0;
+    }
+    #gold{
+        background-color: $color_yellow;
+        transition: 0.5s;
+        position: absolute;
+        transform: translateY(15px) translateX(-500px);
+        z-index: 1;
+        width: 200px;
+    }
+    #platinum{
+        background-color: $plat_col;
+        transition: 0.5s;
+        width: 210px;
+        z-index: 2;
+        position: absolute;
+        transform: translateY(30px) translateX(-500px);
+    }
+    .white_name{
+        @include font_small();
+        color: $color_yellow;
+        font-family: Lucida Grande;
+        margin-bottom: 2%
+    }
+    .black_name{
+        @include font_small();
+        color: $color_black;
+        margin-bottom: 2%
+    }
+    .wrap_price{
+        display: flex;
+        justify-content: center;
+        align-items:flex-start;
+        column-gap: 5px;
+        margin-left: -12px;
+        margin-bottom: 5%;
+    }
+    .dollar{
+        margin-top: 6px;
+        @include dollar_small();
+    }
+    #dollar_white{
+        color: $color_white;
+    }
+    #dollar_black{
+        color: $color_black;
+    }
+    .price{
+        @include plan_price_small();
+    }
+    #price_wh{
+        color: $color_white;
+    }
+    #price_bl{
+        color: $color_black;
+    }
+    .year{
+        @include font_small();
+        margin-bottom: 10%;
+    }
+    #year_wh{
+        color: $color_white;
+    }
+    #year_bl{
+        color: $color_black;
+    }
+    .wrap_tag_script{
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.25px;
+        margin-bottom: 20px;
+    }
+    .tag_script{
+        @include normal_font_small();
+    }
+    #wh_scr{
+        color: $color_white;
+    }
+}

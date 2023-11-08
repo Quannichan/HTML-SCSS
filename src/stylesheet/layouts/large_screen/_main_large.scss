@@ -1,0 +1,265 @@
+@import "../../abstracts/variables";
+@import "../../abstracts/backgrounds";
+@import "../../abstracts/mixins";
+@media (min-width:$break_tab){
+    main{
+        padding-top: 5%;
+    }
+    section{
+        display: block;
+        justify-content: center;
+    }
+    // stylesheet of feature component
+    .feature{
+        display: block;
+        padding: 3%;
+    }
+    .wrap_header_feat{
+        display: block;
+        text-align: center;
+    }
+    .feat_header{
+        margin-bottom: 10px;
+        color: $color_black;
+        @include header_font_large();
+    }
+    .feat_script{
+        color: $color_black;
+        @include font_large();
+    }
+    .wrap_ct_feat{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5% 3%;
+    }
+    .feat_ct{
+        display: block;
+    }
+    .wrap_feat_tag{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        column-gap: 20px;
+        margin-bottom: 15px;
+    }
+    .wrap_icon_feat{
+        display: flex;
+        justify-content: center;
+        padding-right: 5px;
+        text-align: center;
+    }
+    .feat_icon{
+        width: 100%;
+    }
+    .wrap_tag_ct{
+        text-wrap:balance;
+        margin-bottom: 15px;
+    }
+    .tag_title{
+        color: $color_black;
+        @include normal_font_large();
+        margin-bottom: 10px;
+    }
+    .tag_script{
+        color: $color_black;
+        @include normal_font_large();
+    }
+    .wrap_mac{
+        display: block;
+    }
+    .mac{
+        width: 100%;
+    }
+    // stylesheet of download component
+    .wrap_download{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: $background_download;
+        padding-top: 170px;
+        padding-bottom: 170px;
+        background-size: cover;
+        background-position: center;
+    }
+    .download_ct{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        row-gap: 25px;
+        padding: 5%;
+        text-wrap: balance;
+    }
+    .header_download{
+        @include header_font_large();
+        color: $color_white;
+    }
+    .header_script{
+        @include normal_font_large();
+        line-height: 23px;
+        color: $color_white;
+        margin-bottom: 10px;
+    }
+    // stylesheet of choose plan 
+    .choo_plan_compo{
+        margin-top: 2%;
+        background-color: $back_color_plan;
+    }
+    .wrap_choose_plan{
+        padding: 7%;
+        display: block;
+        text-align: center;
+    }
+    .wrap_plan_header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .plan_header{
+        color: $color_black;
+        @include header_font_large();
+    }
+    .wrap_plan{
+        display: flex;
+        justify-content: center;
+        padding: 2%;
+        column-gap: 30px;
+    }
+    .choo_btn{
+        display: none;
+    }
+    // stylesheet of person component
+    .wrap_person_compo{
+        padding: 10%;
+        display: flex;
+        background-image: $background_person;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-position: center;
+        background-size: cover;
+        justify-content:right;
+    }
+    .wrap_person_slider{
+        padding-top: 20%;
+        display: flex;
+        position: relative;
+        max-width: 48rem;
+        column-gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+    .wrap_all_person{
+        display: flex;
+        flex-direction: column;
+        aspect-ratio: 16/9;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        transition: 0.25s;
+    }
+    .wrap_slider{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 10px;
+    }
+    .slider{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border-style: solid;
+        border-color: $color_white;
+        background-color: transparent;
+    }
+    .slider:hover{
+        background-color: $color_white;
+    }
+    .wrap_person{
+        flex: 1 0 100%;
+        scroll-snap-align: start;
+        object-fit: cover;
+        transition: 0.25s;
+        width: 25rem;
+        text-wrap: balance;
+    }
+    .person_name{
+        @include header_font_large();
+        color: $color_white;
+        margin-bottom: 3%;
+    }
+    .person_position{
+        @include normal_font_large();
+        color: $color_white;
+        margin-bottom: 3%;
+    }
+    .person_script{
+        @include normal_font_large();
+        color: $color_white;
+    }
+    // stylesheet of stay in touch component
+    .wrap_stay_IT{
+        margin-top: 3%;
+        display: block;
+    }
+    .wr_header_stit{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header_stit{
+        @include header_font_large();
+    }
+    .wrap_stit_ct{
+        display: flex;
+        justify-content: space-evenly;        
+        align-items: center;
+        padding: 5%;
+    }
+    .wrap_phone{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items:flex-end;
+    }
+    .phone_img{
+        width: 100%;     
+    }
+    .phone_screen_img{
+        width: 100%;
+        position: absolute;
+        padding: 6%;
+        margin-bottom:-5%;
+        z-index: 0;
+    }
+    .wrap_stit_info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        row-gap: 20px;
+    }
+    .wrap_info{
+        text-wrap: balance;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        column-gap: 10px;
+        @include font_large();
+        color: $color_black;
+    }
+    .wrap_contact_icon{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 30px;
+        row-gap: 20px;
+    }
+    // stylehseet of map
+    .map{
+        margin-top: -5%;
+        width: 100vw;
+        height: 50vh;
+    }
+}

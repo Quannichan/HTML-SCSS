@@ -1,0 +1,33 @@
+<section class="choo_plan_compo">
+    <div class="wrap_choose_plan">
+        <div class="wrap_plan_header">
+            <p class="plan_header">Choose Your Plan</p>
+        </div>
+        <div class="wrap_plan">
+            <button class="choo_btn" id="plat">PLATINUM</button>
+            <include src="./components/plan_tag.html" locals='{
+                "type":"platinum",
+                "PlanName":"PLATINUM",
+                "TagPrice":"299",
+                "script_list":"[`Team Account`,`500 GB Discspace`,`Unlimited Uploads per day`]"
+            }'>
+            </include>
+            <button class="choo_btn" id="gol">GOLD</button>
+            <include src="./components/plan_tag.html" locals='{
+                "type":"gold",
+                "PlanName":"GOLD",
+                "TagPrice":"99",
+                "script_list":"[`Personal Account`,`50 GB Discspace`,`500 Uploads per day`]"
+            }'>
+            </include>
+            <button class="choo_btn" id="sil">SILVER</button>
+            <include src="./components/plan_tag.html" locals='{
+                "type":"silver",
+                "PlanName":"SILVER",
+                "TagPrice":"49",
+                "script_list":"[`Personal Account`,`25 GB Discspace`,`50 Uploads per day`]"
+            }'>
+            </include>
+        </div>
+    </div>
+</section>

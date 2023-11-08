@@ -1,0 +1,260 @@
+@import "../../abstracts/variables";
+@import "../../abstracts/backgrounds";
+@import "../../abstracts/mixins";
+@media (min-width:$break_phone) and (max-width:$break_tab){
+    main{
+        padding-top: 5%;
+    }
+    section{
+        display: block;
+        justify-content: center;
+    }
+    // stylesheet of feature component
+    .feature{
+        display: block;
+    }
+    .wrap_header_feat{
+        display: block;
+        text-align: center;
+        margin-bottom: 20%;
+    }
+    .feat_header{
+        margin-bottom: 30px;
+        color: $color_black;
+        @include header_font_medium();
+    }
+    .feat_script{
+        color: $color_black;
+        @include font_medium();
+    }
+    .wrap_ct_feat{
+        display: flex;
+        justify-content: space-between;
+        padding: 5%;
+        align-items: center;
+    }
+    .feat_ct{
+        display: block;
+        text-align: left;
+        width: 70%;
+    }
+    .wrap_feat_tag{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        column-gap: 10px;
+        margin-bottom: 15px;
+    }
+    .wrap_icon_feat{
+        display: flex;
+        justify-content: center;
+        padding-right: 5px;
+        text-align: center;
+    }
+    .feat_icon{
+        width: 100%;
+    }
+    .wrap_tag_ct{
+        text-wrap:balance;
+        margin-bottom: 15px;
+    }
+    .tag_title{
+        color: $color_black;
+        @include normal_font_medium();
+        margin-bottom: 7px;
+    }
+    .tag_script{
+        color: $color_black;
+        @include normal_font_medium();
+    }
+    .wrap_mac{
+        position: absolute;
+        width: 70%;
+        right: 0;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        padding: 50%;
+    }
+    // stylesheet of download component
+    .wrap_download{
+        margin-top: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: $background_download;
+        padding-top: 170px;
+        padding-bottom: 170px;
+        background-size: cover;
+        background-position: center;
+    }
+    .download_ct{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        row-gap: 25px;
+        padding: 5%;
+        text-wrap: balance;
+    }
+    .header_download{
+        @include header_font_medium();
+        color: $color_white;
+    }
+    .header_script{
+        @include normal_font_medium();
+        line-height: 23px;
+        color: $color_white;
+        margin-bottom: 10px;
+    }
+    // stylesheet of choose plan 
+    .choo_plan_compo{
+        margin-top: 5%;
+        display: block;
+        background-color: $back_color_plan;
+        padding-top: 5%;
+    }
+    .wrap_choose_plan{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .wrap_plan_header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .plan_header{
+        color: $color_black;
+        @include header_font_medium();
+    }
+    .wrap_plan{
+        padding: 5%;
+        display: flex;
+        justify-content:center;
+        column-gap: 30px;
+    }
+    .choo_btn{
+       display: none;
+    }
+    // stylesheet of person component
+    .wrap_person_compo{
+        padding: 10%;
+        display: flex;
+        background-image: $background_person;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-position: center;
+        background-size: cover;
+        justify-content:right;
+    }
+    .wrap_person_slider{
+        padding-top: 20%;
+        display: flex;
+        position: relative;
+        max-width: 48rem;
+        column-gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+    .wrap_all_person{
+        display: flex;
+        flex-direction: column;
+        aspect-ratio: 16/9;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        transition: 0.25s;
+    }
+    .wrap_slider{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 10px;
+    }
+    .slider{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border-style: solid;
+        border-color: $color_white;
+        background-color: transparent;
+    }
+    .slider:hover{
+        background-color: $color_white;
+    }
+    .wrap_person{
+        flex: 1 0 100%;
+        scroll-snap-align: start;
+        object-fit: cover;
+        transition: 0.25s;
+        width: 25rem;
+        text-wrap: balance;
+    }
+    .person_name{
+        @include header_font_medium();
+        color: $color_white;
+        margin-bottom: 3%;
+    }
+    .person_position{
+        @include normal_font_medium();
+        color: $color_white;
+        margin-bottom: 3%;
+    }
+    .person_script{
+        @include normal_font_medium();
+        color: $color_white;
+    }
+    // stylesheet of stay in touch component
+    .wrap_stay_IT{
+        margin-top: 3%;
+        display: block;
+    }
+    .wr_header_stit{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header_stit{
+        @include header_font_medium();
+    }
+    .wrap_stit_ct{
+        padding: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 30px;
+    }
+    .wrap_phone{
+        display: none;
+    }
+    .phone_screen_img{
+        position: absolute;
+        transform: translateY(50px);
+    }
+    .wrap_stit_info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        row-gap: 20px;
+    }
+    .wrap_info{
+        text-wrap: balance;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        column-gap: 10px;
+        @include font_medium();
+        color: $color_black;
+    }
+    .wrap_contact_icon{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 30px;
+    }
+    .map{
+        width: 100vw;
+        height: 50vh;
+    }
+}

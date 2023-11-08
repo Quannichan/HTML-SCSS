@@ -1,0 +1,56 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+@media (min-width:$break_tab){
+    .yellow_btn{
+        background-color: $color_yellow;
+        color: $color_black;
+        border-style: none;
+        padding: 1% 5%;
+        border-radius: 20px;
+        @include normal_font_large();
+    }
+    .black_btn{
+        background-color: $color_black;
+        color: $color_white;
+        border-style: none;
+        padding: 1% 5%;
+        border-radius: 20px;
+        @include normal_font_large();
+    }
+}
+@media (max-width:$break_tab) and (min-width:$break_phone){
+    .yellow_btn{
+        background-color: $color_yellow;
+        color: $color_black;
+        border-style: none;
+        padding: 1% 4%;
+        border-radius: 20px;
+        @include normal_font_medium();
+    }
+    .black_btn{
+        background-color: $color_black;
+        color: $color_white;
+        border-style: none;
+        padding: 3% 7%;
+        border-radius: 20px;
+        @include normal_font_medium();
+    }
+}
+@media (max-width:$break_phone){
+    .yellow_btn{
+        background-color: $color_yellow;
+        color: $color_black;
+        border-style: none;
+        padding: 3% 10%;
+        border-radius: 20px;
+        @include normal_font_small();
+    }
+    .black_btn{
+        background-color: $color_black;
+        color: $color_white;
+        border-style: none;
+        padding: 3% 10%;
+        border-radius: 20px;
+        @include normal_font_small();
+    }
+}

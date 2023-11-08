@@ -1,0 +1,63 @@
+<if condition="type === 'silver' ">
+    <div class="plan" id="silver">
+        <p class="white_name">{{PlanName}}</p>
+        <div class="wrap_price">
+            <p class="dollar" id="dollar_white">$</p>
+            <p class="price" id="price_wh">{{TagPrice}}</p>
+        </div>
+        <p class="year" id="year_wh">YEAR</p>
+        <div class="wrap_tag_script">
+            <each loop="script in {{script_list}}">
+               <p class="tag_script" id="wh_scr">{{script}}</p>
+            </each>
+        </div>
+        <div class="wrap_plan_btn">
+            <include src="./components/button.html"
+                locals='{"BtnColor":"yellow_btn",
+                        "CtBtn":"PURCHASE"}'>
+                </include>
+        </div>
+    </div>
+</if>
+<elseif condition="type === 'gold'">
+    <div class="plan" id="gold">
+        <p class="black_name">{{PlanName}}</p>
+        <div class="wrap_price">
+            <p class="dollar" id="dollar_black">$</p>
+            <p class="price" id="price_bl">{{TagPrice}}</p>
+        </div>
+        <p class="year" id="year_bl">YEAR</p>
+        <div class="wrap_tag_script">
+            <each loop="script in {{script_list}}">
+               <p class="tag_script" id="bl_scr">{{script}}</p>
+            </each>
+        </div>
+        <div class="wrap_plan_btn">
+            <include src="./components/button.html"
+                locals='{"BtnColor":"black_btn",
+                        "CtBtn":"PURCHASE"}'>
+                </include>
+        </div>
+    </div>
+</elseif>
+<elseif condition="type === 'platinum'">
+    <div class="plan" id="platinum">
+        <p class="white_name">{{PlanName}}</p>
+        <div class="wrap_price">
+            <p class="dollar" id="dollar_white" >$</p>
+            <p class="price" id="price_wh">{{TagPrice}}</p>
+        </div>
+        <p class="year" id="year_wh">YEAR</p>
+        <div class="wrap_tag_script">
+            <each loop="script in {{script_list}}">
+               <p class="tag_script" id="wh_scr">{{script}}</p>
+            </each>
+        </div>
+        <div class="wrap_plan_btn">
+            <include src="./components/button.html"
+                locals='{"BtnColor":"yellow_btn",
+                        "CtBtn":"PURCHASE"}'>
+                </include>
+        </div>
+    </div>
+</elseif>

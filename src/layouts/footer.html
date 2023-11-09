@@ -1,0 +1,44 @@
+<footer>
+    <div class="wrap_footer_compo">
+        <div class="wrap_foot_info">
+            <div class="wrap_trademark_footer">
+                <p class="trademark_footer">HOFMANN</p>
+             </div>
+             <!-- start footer info -->
+             <include src="./components/footer_info.html" 
+             locals='{
+                 "footerScr":"Hoffman UI Kit was made to help you quickly create beautiful layouts of responsive websites.",
+                 "reco":"© 2016 Created by Goldenfox"
+             }'>
+             </include>
+             <!-- start footer form -->
+             <include src="./components/footer_form.html"></include>
+        </div>
+        <div class="wrap_policy_follow">
+            <div class="wrap_policy">
+                <include src="./components/list.html" 
+                locals='{
+                    "ul_classname":"policy_list",
+                    "choose":"list_noimg",
+                    "list":"[`About Us`,`Testimonials`,`Documentation`,`Explore`,`Blog`,`Help`,`Contact`,`News`,`Privacy`]",
+                    "li_classname":"policy"
+                }'>
+                </include>
+            </div>
+            <div class="wrap_follow_foot">
+                <div class="wrap_follow_header">
+                    <p class="header_follow">FOLLOW US</p>
+                </div>
+                <div class="wrap_follow_icon">
+                    <include src="./components/list.html"
+                        locals='{
+                    "ul_classname":"follow_list",
+                    "choose":"list_img",
+                    "list":"[`../images/Pinterest.png`,`../images/linkedin.png`,`../images/google-plus.png`,`../images/twitter.png`,`../images/facebook.png`,`../images/instagram.png`]",
+                    "li_classname":"follow_icon"}'>
+                    </include>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

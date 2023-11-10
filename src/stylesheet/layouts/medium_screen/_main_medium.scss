@@ -381,14 +381,28 @@
     }
     .header_img{
         @include header_font_small();
-        margin-bottom: 7px
+        margin-bottom: 10px
     }
     .time_img{
         @include font_medium();
-        margin-bottom: 10px;
+        margin-bottom: 10px
+    }
+    .line{
+        background-color: $color_white;
+        width: 30px;
+        height: 5px;
+    }
+    #line1{
+        background-color: $color_white;
+        margin-bottom: 15px;
+    }
+    #line2{
+        background-color: $color_black;
+        margin-left: 20px;
+        margin-bottom: 15px;
     }
     .scr_img{
-        width: 200px;
+        width: 15rem;
         margin-bottom: 10px;
         @include normal_font_medium();
     }
@@ -450,7 +464,7 @@
     .name_img{
         @include header_font_small();
         margin-left:10px;
-        width: 20px;
+        width: 20%;
     }
     #img2_large{
         display: block;

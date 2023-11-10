@@ -384,7 +384,7 @@
         position: absolute;
         color: $color_white;
         z-index: 1000;
-        transform: translateX(-10px) translateY(130px);
+        transform: translateX(10px) translateY(130px);
     }
     .text_port2{
         text-align: left;
@@ -453,7 +453,7 @@
         margin-bottom: 10px;
     }
     .scr_img{
-        width: 180px;
+        width: 15rem;
         margin-bottom: 10px;
         @include normal_font_small();
     }

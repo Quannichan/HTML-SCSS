@@ -395,6 +395,20 @@
         margin-bottom: 20px;
         @include font_medium();
     }
+    .line{
+        background-color: $color_white;
+        width: 30px;
+        height: 5px;
+    }
+    #line1{
+        background-color: $color_white;
+        margin-bottom: 15px;
+    }
+    #line2{
+        background-color: $color_black;
+        margin-left: 20px;
+        margin-bottom: 15px;
+    }
     .wrap_status{
         display: flex;
         justify-content: flex-start;
@@ -425,11 +439,35 @@
         margin-top: 5px;
         margin-left: 20px;
         @include font_medium();
-        margin-bottom: 30px;
+        margin-bottom: 25px;
     }
     .name_img{
         @include header_font_large();
         margin-left:20px;
         width: 20px;
+    }
+    #img2_large{
+        display: block;
+    }
+    #img2_phone{
+        display: none;
+    }
+    #img3_large{
+        display: block;
+    }
+    #img3_phone{
+        display: none;
+    }
+    #img4_phone{
+        display: none;
+    }
+    #img4_large{
+        display: block;
+    }
+    #img5_large{
+        display: block;
+    }
+    #img5_phone{
+        display: none;
     }
 }

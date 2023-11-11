@@ -381,10 +381,12 @@
         width: 100%;
     }
     .text_port1{
+        text-align: left;
         position: absolute;
         color: $color_white;
         z-index: 1000;
-        transform: translateX(10px) translateY(130px);
+        transform: translateX(5px) translateY(130px);
+        width: 45%;
     }
     .text_port2{
         text-align: left;
@@ -425,18 +427,13 @@
     .choose_nav:hover{
         background-color: $color_yellow;
     }
-    .text_port1{
-        text-align: left;
-        z-index: 1000;
-        color: $color_white;
-    }
     .header_img{
         @include font_medium();
         margin-bottom: 5px
     }
     .time_img{
         @include font_small();
-        margin-bottom: 10px;
+        margin-bottom: 7px;
     }
     .line{
         background-color: $color_white;
@@ -445,7 +442,7 @@
     }
     #line1{
         background-color: $color_white;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
     #line2{
         background-color: $color_black;
@@ -453,7 +450,6 @@
         margin-bottom: 10px;
     }
     .scr_img{
-        width: 15rem;
         margin-bottom: 10px;
         @include normal_font_small();
     }

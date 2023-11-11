@@ -334,7 +334,9 @@
         position: absolute;
         color: $color_white;
         z-index: 1000;
-        transform: translateX(120px);
+        transform: translateX(100px);
+        width: 30%;
+        text-align: left;
     }
     .text_port2{
         text-align: left;
@@ -374,11 +376,6 @@
     .choose_nav:hover{
         background-color: $color_yellow;
     }
-    .text_port1{
-        text-align: left;
-        z-index: 1000;
-        color: $color_white;
-    }
     .header_img{
         @include header_font_small();
         margin-bottom: 10px
@@ -402,7 +399,6 @@
         margin-bottom: 15px;
     }
     .scr_img{
-        width: 15rem;
         margin-bottom: 10px;
         @include normal_font_medium();
     }

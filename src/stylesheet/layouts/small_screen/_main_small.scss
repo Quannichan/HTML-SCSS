@@ -306,4 +306,220 @@
         width: 100vw;
         height: 30vh;
     }
+<<<<<<< Updated upstream
+=======
+    // start portfolio component
+    .portfolio_compo{
+        display: block;
+        padding-top: 5%;
+    }
+    .wrap_portfolio{
+        padding: 5%;
+        display: flex;
+        justify-content: center;
+    }
+    .porfolio{
+        display: block;
+        text-align: center;
+    }
+    .wrap_port_header{
+        text-align: center;
+        margin-bottom: 10%
+    }
+    .port_header{
+        @include header_font_small();
+    }
+    .wrap_out_imgport{
+        display: flex;
+        justify-content: center;
+    }
+    .wrap_imgport{
+        display: block;
+        justify-content: center;
+        text-align: center;
+        width: 20%;
+    }
+    .port_img1{
+        background-image: url("../../images/img1.png");
+        padding: 100%;
+        width: 100%;
+        background-size: contain;
+    }
+    .port_img2{
+        background-image: url("../../images/img2.png");
+        padding: 100% 200%;
+        width: 100%;
+        background-size: cover;
+        filter: brightness(50%);
+    }
+    .port_img3{
+        background-image: url("../../images/img3.png");
+        padding: 100%;
+        padding: 100% 200%;
+        width: 100%;
+        background-size: cover;
+    }
+    .port_img4{
+        background-image: url("../../images/img4.png");
+        padding: 100%;
+        background-size: contain;
+    }
+    .port_img5{
+        background-image: url("../../images/img5.png");
+        padding: 100%;
+        padding: 100%;
+        width: 100%;
+        background-size: cover;
+    }
+    .port_img6{
+        background-image: url("../../images/img6.png");
+        padding: 100%;
+        background-size: contain;
+    }
+    .wrap_img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .text_port1{
+        text-align: left;
+        position: absolute;
+        color: $color_white;
+        z-index: 1000;
+        transform: translateX(5px) translateY(130px);
+        width: 45%;
+    }
+    .text_port2{
+        text-align: left;
+        position: absolute;
+        background-color: $color_white;
+        width: 253px;
+        height: 130px;
+        transform: translateY(255px);
+    }
+    .wrap_page_nav{
+        margin-top: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 30px;
+    }
+    .nav_arr{
+        width: 25px;
+        height: 30px;
+        padding: 3%;
+        border-radius: 50%;
+    }
+    #left{
+        rotate: -180deg;
+    }
+    .choose_nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include font_large();
+        color: $color_black;
+        transition: 0.25s;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+    .choose_nav:hover{
+        color: $color_yellow;
+        box-shadow: 0px 0px 5px black;
+    }
+    .header_img{
+        @include font_medium();
+        margin-bottom: 5px
+    }
+    .time_img{
+        @include font_small();
+        margin-bottom: 7px;
+    }
+    .line{
+        background-color: $color_white;
+        width: 20px;
+        height: 3px;
+    }
+    #line1{
+        background-color: $color_white;
+        margin-bottom: 10px;
+    }
+    #line2{
+        background-color: $color_black;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    .scr_img{
+        margin-bottom: 10px;
+        @include normal_font_small();
+    }
+    .wrap_status{
+        display:none;
+    }
+    .view{
+        display: flex;
+        column-gap: 5px;
+    }
+    .like{
+        display: flex;
+        column-gap: 5px;
+    }
+    .comm{
+        display: flex;
+        column-gap: 5px;
+    }
+    .view_stat{
+        @include normal_font_medium();
+    }
+    .like_stat{
+        @include normal_font_medium();
+    }
+    .com_stat{
+        @include normal_font_medium();
+    }
+    .staticon{
+        width: 20px;
+    }
+    .text_title{
+        margin-top: 20px;
+        margin-left: 10px;
+        @include normal_font_large();
+    }
+    .author{
+        margin-top: 5px;
+        margin-left: 10px;
+        @include font_small();
+        margin-bottom: 10px;
+    }
+    .name_img{
+        @include header_font_medium();
+        margin-left:10px;
+    }
+    #img2_large{
+        display: none;
+    }
+    #img2_phone{
+        display: block;
+    }
+    #img3_large{
+        display: none;
+    }
+    #img3_phone{
+        display: block;
+    }
+    #img4_phone{
+        display: block;
+    }
+    #img4_large{
+        display: none;
+    }
+    #img5_large{
+        display: none;
+    }
+    #img5_phone{
+        display: block;
+    }
+>>>>>>> Stashed changes
 }

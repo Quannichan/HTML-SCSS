@@ -30,6 +30,9 @@
     .hamburger_response{
         display: none;
     }
+    .ham_btn{
+        display: none;
+    }
     .wrap_list_response{
         display: flex;
         justify-content: space-evenly;
@@ -76,6 +79,9 @@
         display: block;
     }
     .hamburger_response{
+        display: none;
+    }
+    .ham_btn{
         display: none;
     }
     .wrap_list_response{
@@ -127,8 +133,13 @@
     .hamburger_response{
         display: block;
     }
-    .hamburger_response:hover ~ .wrap_list_response{
+    .ham_btn:focus ~ .wrap_list_response{
         display: flex;
+    }
+    .ham_btn{
+        display: block;
+        background-color: transparent;
+        border-style: none;
     }
     .wrap_list_response{
         display: none;

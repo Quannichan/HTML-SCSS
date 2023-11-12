@@ -377,6 +377,12 @@
         height: 20px;
         border-radius: 50%;
     }
+    .wrap_choose_nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+    }
     .choose_nav:hover{
         color: $color_yellow;
         box-shadow: 0px 0px 5px black;

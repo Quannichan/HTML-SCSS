@@ -412,6 +412,12 @@
     #left{
         rotate: -180deg;
     }
+    .wrap_choose_nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+    }
     .choose_nav{
         display: flex;
         justify-content: center;

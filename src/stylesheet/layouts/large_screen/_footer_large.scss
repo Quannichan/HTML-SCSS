@@ -1,0 +1,119 @@
+@import "../../abstracts/variables";
+@import "../../abstracts/backgrounds";
+@import "../../abstracts/mixins";
+@media (min-width: $break_tab) {
+    footer{
+        display: block;
+        background-color: $color_black;
+    }
+    .wrap_footer_compo{
+        padding: 7% 3% 7% 7%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        column-gap: 30px;
+    }
+    .wrap_foot_info{
+        text-wrap: balance;
+        text-align: left;
+    }
+    .wrap_trademark_footer{
+        padding: 1%;
+    }
+    .trademark_footer{
+        @include trademark_large();
+        color: $color_yellow;
+    }
+    .wrap_footer_script{
+        text-align: left;
+        width: 50%;
+    }
+    .footer_script{
+        @include font_large();
+        color: $color_white;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+    .footer_reco{
+        @include font_large();
+        color: $color_white;
+    }
+    .form_fotter{
+        display: flex;
+        flex-direction: column;
+        margin-left: -10px;
+    }
+    .wrap_header_form{
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .header_form{
+        @include font_large();
+        color: $color_white;
+    }
+    .wrap_input_footer{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .sub_form_footer{
+        background-color: transparent;
+        @include font_large();
+        outline: none;
+        color: $color_white;
+        padding: 4.5%;
+        border-style: solid;
+        border-right: none;
+        border-radius: 10px 0px 0px 10px;
+    }
+    .sub_btn_foot{
+        display: flex;
+        padding: 5%;
+        background-color: $color_yellow;
+        align-items: center;
+        border-style: none;
+        border-radius: 0px 10px 10px 0px;
+    }
+    .sub_img{
+        width: 100%;
+    }
+    .wrap_policy_follow{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-end;
+    }
+    .wrap_policy{
+        margin-bottom: 50px;
+    }
+    .policy_list{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 30px;
+        row-gap: 10px;
+    }
+    .policy{
+        @include font_medium();
+        color: $color_white;
+    }
+    .wrap_follow_foot{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .wrap_follow_header{
+        text-align: 
+        right;
+        margin-bottom: 20px
+    }
+    .header_follow{
+        @include font_large();
+        color: $color_white;
+    }
+    .follow_list{
+        display: flex;
+        justify-content: flex-end;
+        column-gap: 30px;
+    }
+}

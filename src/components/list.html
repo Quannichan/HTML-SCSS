@@ -6,7 +6,7 @@
     </if>
     <elseif condition="choose === 'list_img'">
         <each loop="src_img in {{ list }}">
-            <li class="{{li_classname}}"><img src="{{src_img}}" alt="image list"></li>
+            <li><img class="{{li_classname}}" src="{{src_img}}" alt="image list"></li>
         </each>
     </elseif>
     <else>

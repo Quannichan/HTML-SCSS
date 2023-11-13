@@ -385,16 +385,16 @@
         position: absolute;
         color: $color_white;
         z-index: 1000;
-        transform: translateX(5px) translateY(130px);
-        width: 45%;
+        transform: translateX(5px) translateY(115px);
+        width: 44%;
     }
     .text_port2{
         text-align: left;
         position: absolute;
         background-color: $color_white;
-        width: 253px;
+        width: 232px;
         height: 130px;
-        transform: translateY(255px);
+        transform: translateY(237px);
     }
     .wrap_page_nav{
         margin-top: 50%;
@@ -434,12 +434,11 @@
         box-shadow: 0px 0px 5px black;
     }
     .header_img{
-        @include font_medium();
-        margin-bottom: 5px
+        @include normal_font_large();
     }
     .time_img{
-        @include font_small();
-        margin-bottom: 7px;
+        @include normal_font_small();
+        margin-bottom: 5px;
     }
     .line{
         background-color: $color_white;
@@ -448,7 +447,7 @@
     }
     #line1{
         background-color: $color_white;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     #line2{
         background-color: $color_black;
@@ -456,7 +455,6 @@
         margin-bottom: 10px;
     }
     .scr_img{
-        margin-bottom: 10px;
         @include normal_font_small();
     }
     .wrap_status{
@@ -473,15 +471,6 @@
     .comm{
         display: flex;
         column-gap: 5px;
-    }
-    .view_stat{
-        @include normal_font_medium();
-    }
-    .like_stat{
-        @include normal_font_medium();
-    }
-    .com_stat{
-        @include normal_font_medium();
     }
     .staticon{
         width: 20px;

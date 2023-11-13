@@ -334,16 +334,16 @@
         position: absolute;
         color: $color_white;
         z-index: 1000;
-        transform: translateX(100px);
-        width: 30%;
+        transform: translateX(90px);
+        width: 25%;
         text-align: left;
     }
     .text_port2{
         text-align: left;
         position: absolute;
         background-color: $color_white;
-        width: 160px;
-        height: 160px;
+        width: 140px;
+        height: 140px;
     }
     .wrap_page_nav{
         margin-top: 30px;
@@ -383,12 +383,13 @@
         box-shadow: 0px 0px 5px black;
     }
     .header_img{
-        @include header_font_small();
-        margin-bottom: 10px
+        @include normal_font_large();
+        margin-top: 2px;
+        margin-bottom: 2px
     }
     .time_img{
-        @include font_medium();
-        margin-bottom: 10px
+        @include font_small();
+        margin-bottom: 5px
     }
     .line{
         background-color: $color_white;
@@ -397,7 +398,7 @@
     }
     #line1{
         background-color: $color_white;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
     #line2{
         background-color: $color_black;
@@ -405,8 +406,8 @@
         margin-bottom: 15px;
     }
     .scr_img{
-        margin-bottom: 10px;
-        @include normal_font_medium();
+        margin-bottom: 3px;
+        @include normal_font_small();
     }
     .line{
         background-color: $color_white;
@@ -420,9 +421,10 @@
     #line2{
         background-color: $color_black;
         margin-left: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     .wrap_status{
+        @include font_small;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -430,14 +432,20 @@
     }
     .view{
         display: flex;
+        justify-content: center;
+        align-items: center;
         column-gap: 5px;
     }
     .like{
         display: flex;
+        justify-content: center;
+        align-items: center;
         column-gap: 5px;
     }
     .comm{
         display: flex;
+        justify-content: center;
+        align-items: center;
         column-gap: 5px;
     }
     .view_stat{
@@ -450,10 +458,11 @@
         @include normal_font_medium();
     }
     .staticon{
-        width: 20px;
+        height: 10px;
+        width: 14px;
     }
     .text_title{
-        margin-top: 20px;
+        margin-top: 10px;
         margin-left: 10px;
         @include font_large();
     }
@@ -461,7 +470,7 @@
         margin-top: 5px;
         margin-left: 10px;
         @include font_small();
-        margin-bottom: 15px;
+        margin-bottom: 5px;
     }
     .name_img{
         @include header_font_small();

@@ -339,16 +339,16 @@
         position: absolute;
         color: $color_white;
         z-index: 1000;
-        transform: translateX(170px);
-        width: 30%;
+        transform: translateX(180px);
+        width: 20%;
         text-align: left;
     }
     .text_port2{
         text-align: left;
         position: absolute;
         background-color: $color_white;
-        width: 240px;
-        height: 240px;
+        width: 203px;
+        height: 203px;
     }
     .wrap_page_nav{
         margin-top: 30px;
@@ -388,16 +388,16 @@
         box-shadow: 0px 0px 5px black;
     }
     .header_img{
-        @include header_font_medium();
-        margin-bottom: 10px
+        @include header_font_small();
+        margin-bottom: 5px
     }
     .time_img{
-        @include font_large();
-        margin-bottom: 20px;
+        @include font_medium();
+        margin-bottom: 10px;
     }
     .scr_img{
-        margin-bottom: 20px;
-        @include font_medium();
+        margin-bottom: 10px;
+        @include font_small();
     }
     .line{
         background-color: $color_white;
@@ -411,9 +411,10 @@
     #line2{
         background-color: $color_black;
         margin-left: 20px;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
     .wrap_status{
+    @include font_small;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -421,21 +422,28 @@
     }
     .view{
         display: flex;
+        justify-content: center;
+        align-items: center;
         column-gap: 5px;
     }
     .like{
         display: flex;
+        justify-content: center;
+        align-items: center;
         column-gap: 5px;
     }
     .comm{
         display: flex;
+        justify-content: center;
+        align-items: center;
         column-gap: 5px;
     }
     .staticon{
-        width: 20px;
+        height: 12px;
+        width: 17px;
     }
     .text_title{
-        margin-top: 30px;
+        margin-top: 20px;
         margin-left: 20px;
         @include header_font_small();
     }
@@ -443,7 +451,7 @@
         margin-top: 5px;
         margin-left: 20px;
         @include font_medium();
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
     .name_img{
         @include header_font_large();

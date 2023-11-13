@@ -53,13 +53,16 @@
                 </div>
             </div>
             <div class="wrap_page_nav">
-                <img class="nav_arr" id="left" src="../images/scroll-down.png" alt="nav">
-                    <a class="choose_nav" href="">1</a>
-                    <a class="choose_nav" href="">2</a>
-                    <a class="choose_nav" href="">3</a>
-                    <a class="choose_nav" href="">4</a>
-                    <a class="choose_nav" href="">5</a>
-                <img class="nav_arr" id="right" src="../images/scroll-down.png" alt="nav">
+                <img class="nav_arr" id="left" src="../images/arrow.png" alt="nav">
+                    <include src="./components/list.html" 
+                    locals='{
+                        "choose":"list_noimg",
+                        "ul_classname":"wrap_choose_nav",
+                        "li_classname":"choose_nav",
+                        "list":"[`1`,`2`,`3`,`4`,`5`]"
+                    }'>    
+                    </include>
+                <img class="nav_arr" id="right" src="../images/arrow.png" alt="nav">
             </div>
         </div>
     </div>

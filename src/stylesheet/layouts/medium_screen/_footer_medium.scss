@@ -69,12 +69,14 @@
     }
     .sub_btn_foot{
         display: flex;
+        background-color: $color_yellow;
+        padding: 5%;
         align-items: center;
         border-style: none;
         border-radius: 0px 10px 10px 0px;
     }
     .sub_img{
-        width: 45px;
+        width: 100%;
     }
     .wrap_policy_follow{
         display: flex;

@@ -358,19 +358,18 @@
         column-gap: 30px;
     }
     .nav_arr{
-        background-color: $color_yellow;
-        width: 30px;
+        width: 25px;
         height: 30px;
         padding: 3%;
         border-radius: 50%;
     }
     #left{
-        rotate: 90deg;
-    }
-    #right{
-        rotate: -90deg;
+        rotate: -180deg;
     }
     .choose_nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         @include font_large();
         color: $color_black;
         transition: 0.25s;
@@ -378,8 +377,15 @@
         height: 20px;
         border-radius: 50%;
     }
+    .wrap_choose_nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+    }
     .choose_nav:hover{
-        background-color: $color_yellow;
+        color: $color_yellow;
+        box-shadow: 0px 0px 5px black;
     }
     .header_img{
         @include header_font_medium();

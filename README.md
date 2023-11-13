@@ -8,7 +8,7 @@
 - SCSS.
 - Parcel.
 # WEB DESIGN:
-- Link.
+- [Link](https://quannichan-html-scss.netlify.app/).
 # SOURCE CODE:
 - git clone https://github.com/Quannichan/HTML-SCSS.git
 # HOW TO RUN:
